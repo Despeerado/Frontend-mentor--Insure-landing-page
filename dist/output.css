@@ -644,7 +644,7 @@ html {
   font-family: 'Karla', sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'DM Serif Display', serif;
 }
 
@@ -661,6 +661,10 @@ h1, h2, h3 {
   margin-bottom: 2.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -675,6 +679,10 @@ h1, h2, h3 {
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -697,12 +705,24 @@ h1, h2, h3 {
   display: none;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-4 {
   height: 1rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-auto {
   height: auto;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-20 {
@@ -711,6 +731,10 @@ h1, h2, h3 {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-full {
@@ -732,6 +756,14 @@ h1, h2, h3 {
 .basis-full {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+.auto-cols-auto {
+  grid-auto-columns: auto;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -771,6 +803,10 @@ h1, h2, h3 {
           justify-content: space-between;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -803,6 +839,10 @@ h1, h2, h3 {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-md {
@@ -881,6 +921,11 @@ h1, h2, h3 {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -1041,6 +1086,10 @@ h1, h2, h3 {
     display: none;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1086,9 +1135,24 @@ h1, h2, h3 {
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
