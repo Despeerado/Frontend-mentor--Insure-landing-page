@@ -2,5 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  html {
+    font-family: 'Karla', sans-serif;
+  }
+  h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+  }
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
