@@ -6,21 +6,134 @@
   html {
     font-family: 'Karla', sans-serif;
   }
-  h1, h2 {
+  h1, h2, h3 {
     font-family: 'DM Serif Display', serif;
   }
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-.lines-intro:before {
-  src:url('../images/bg-pattern-intro-right-mobile.svg');
+.lines-intro {
+  position :relative;
 }
 
+.lines-middle {
+  position: relative;
+}
+
+.lines-footer {
+  position: relative;
+}
+
+.lines-intro:before {
+  display: none;
+  position: absolute;
+  content:url('../images/bg-pattern-intro-right-mobile.svg');
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.lines-intro:after {
+  display: none;
+  position: absolute;
+  content:url('../images/bg-pattern-intro-left-mobile.svg');
+  transform: translateY(0%);
+  left: 0;
+  }
+
 .lines-middle:before {
-  src:url('../images/bg-pattern-how-we-work-mobile.svg');
+  position: absolute;
+  content:url('../images/bg-pattern-how-we-work-mobile.svg');
+  top: 0;
+  right: 0;
 }
 
 .lines-footer:before {
-  src:url('../images/bg-pattern-footer-mobile.svg');
+  position: absolute;
+  content: url('../images/bg-pattern-footer-mobile.svg');
+  top: 0;
+  left: 0; 
+}
+
+@media only screen and (min-width: 640px) {
+  .lines-intro:before {
+    display: block;
+    content:url('../images/bg-pattern-intro-right-desktop.svg');
+  }
+  .lines-intro:after {
+    content:url('../images/bg-pattern-intro-left-desktop.svg');
+    transform: translateY(-25%);
+  }
+  .lines-middle:before {
+    content:url('../images/bg-pattern-how-we-work-desktop.svg');
+  }
+  .lines-footer:before {
+    content: url('../images/bg-pattern-footer-desktop.svg');
+  }
+}
+
+.line:before {
+    display: none;
+    content: '';
+    position: absolute;
+    width: 15rem;
+    top: -1rem;
+    border-top: 1px solid white;
+  }
+  @media only screen and (min-width: 1024px){
+    .line:before {
+        display: block;
+    }
+}
+
+.headings:before {
+  content: url('/images/bg-pattern-intro-left-mobile.svg');
+  position: absolute;
+  
+  left: 0;
+  z-index: 0;
+}
+@media only screen and (min-width: 640px) {
+  .headings:before {
+    display: none;
+  }
+  .lines-intro:after {
+  display: block;
+}
+}
+
+.cta {
+  position: relative;
+}
+
+.cta:after {
+  content: url('../images/bg-pattern-how-we-work-mobile.svg');
+  position: absolute;
+  top: 0;
+  right: 0;  
+}
+
+@media only screen and (min-width: 640px) {
+.cta:after {
+    content: url('../images/bg-pattern-how-we-work-desktop.svg')
+  }
+}
+#navbar {
+  display: none;
+}
+#navbar_mobile.hidden {
+  display: none;
+}
+
+@media only screen and (min-width:640px) {
+  #navbar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  #navbar_mobile {
+    display: none;
+  }
 }
