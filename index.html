@@ -1,12 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="refresh" content="0; url=https://despeerado.github.io/src/index.html">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/output.css">
+  
+  <title>Frontend Mentor | Insure landing page</title>
 </head>
 <body>
-	
+
+<!-- header -->
+<div class="container max-w-[1110px] px-6">
+<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-6">
+  <nav class="relative w-full mx-auto sm:flex sm:items-center sm:justify-between z-20" aria-label="Global">
+    <div class="flex items-center justify-between">
+      <a class="flex-none" href="#">
+        <img class="w-22 h-auto" src="../images/logo.svg" alt="Logo">
+      </a>
+      <div class="sm:hidden">
+        <button type="button"
+          class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm "
+          >
+          <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+          <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor"
+            viewBox="0 0 16 16">
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <div id="navbar" class=" hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block z-20">
+      <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
+        <a class="font-bold tracking-wide text-gray hover:text-primary uppercase transition-colors" href="#" aria-current="page">How we work</a>
+        <a class="font-bold tracking-wide text-gray hover:text-primary uppercase transition-colors"
+          href="#">Blog</a>
+        <a class="font-bold tracking-wide text-gray hover:text-primary uppercase transition-colors"
+          href="#">Account</a>
+        <a class="font-bold tracking-wide text-primary border border-primary hover:text-white hover:bg-primary transition-colors  uppercase px-5 py-2"
+          href="#">View plans</a>
+      </div>
+    </div>
+    <div id="navbar_mobile" class="absolute top-[58px] left-[-24px] bg-[#fff] w-screen hs-collapse hidden overflow-hidden basis-full grow sm:block">
+      <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5 ">
+        <a class="font-bold tracking-wide text-gray hover:text-primary uppercase transition-colors px-6 " href="#" aria-current="page">How we work</a>
+        <a class="font-bold tracking-wide text-gray hover:text-primary uppercase transition-colors px-6 "
+          href="#">Blog</a>
+        <a class="font-bold tracking-wide text-gray hover:text-primary uppercase transition-colors px-6 "
+          href="#">Account</a>
+        <a class="font-bold tracking-wide text-primary  hover:text-white hover:bg-primary transition-colors uppercase px-5 py-2"
+          href="#">View plans</a>
+      </div>
+    </div>
+  </nav>
+</header>
+</div>
+  <!-- main section -->
+  <!-- after:content-[url('https://placekitten.com/1400')] -->
+  <section class="bg-primary lines-intro">
+    <div class="container max-w-[1110px] ">
+      <div class="flex flex-col sm:flex-row items-center justify-center mx-auto">
+        <div class=" flex-1 sm:order-last w-full">
+          <!-- <picture> -->
+            <!-- <source media="(min-width:640px)"  img src="/images/image-intro-mobile.jpg" alt="family" srcset="/images/image-intro-desktop.jpg 320w"> -->
+        <img src="../images/image-intro-mobile.jpg"
+          srcset="/images/image-intro-mobile.jpg 320w, /images/image-intro-desktop.jpg 735w"
+          sizes="(min-width:735px) 735px, 320px" alt="insure family photo" class=" w-full ml-auto block md:w-[540px] lg:translate-y-[8rem]">
+          <!-- </picture> -->
+        </div>
+        <div class="flex-1 text-center sm:text-left pb-6 px-4
+         sm:order-first headings">
+          <h1 class="text-white line relative text-5xl text-center sm:text-left pt-16 pb-6 sm:pr-0.5 ">Humanizing your insurance.</h1>
+          <p class="text-white text-md text-center sm:text-left leading-7 pb-6">Get your life insurance coverage easier and faster. We blend our expertise
+          and technology to help you find the plan that’s right for you. Ensure you
+          and your loved ones are protected.</p>
+          <a href="#"
+            class="py-2 px-7 inline-flex justify-center items-center border text-white text-sm font-bold border-white uppercase hover:text-primary hover:bg-white hover:border-white focus:outline-none transition-all">
+          View plans          
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class="py-[10rem]">
+  <div class="container max-w-[1110px] pb-20 px-4">
+    <!-- Icon Blocks -->
+      <!-- <hr class="bg-gray max-w-xs h-0.5 mb-8 mx-auto"> -->
+      <h1 class="text-5xl text-center sm:text-left pb-12">We're different</h1>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-4 items-center justify-center">    
+        <!-- Icon Block -->
+        <div class="text-center md:text-left pb-20">
+      
+          <div
+            class="flex justify-center items-center w-20 h-20 pb-8 rounded-full mx-auto  md:mx-0">
+              <img src="/images/icon-snappy-process.svg" alt="snappy process">
+          </div>
+          <div class="mt-3">
+            <h3 class="text-2xl font-semibold text-primary pb-4">Snappy process</h3>
+            <p class="mt-1 text-gray">Our application process can be completed in minutes, not hours. Don’t get
+            stuck filling in tedious forms.</p>
+          </div>
+        </div>
+
+        <div class="text-center md:text-left pb-20">
+          <div
+            class="flex justify-center items-center w-20 h-20 pb-8 rounded-full mx-auto  md:mx-0">
+              <img src="/images/icon-affordable-prices.svg" alt="affordable prices">
+          </div>
+          <div class="mt-3">
+            <h3 class="text-2xl  font-semibold text-primary pb-4">Affordable prices</h3>
+            <p class="mt-1 text-gray">We don’t want you worrying about high monthly costs. Our prices may be low,
+            but we still offer the best coverage possible.</p>
+          </div>
+        </div>
+
+        <div class="text-center md:text-left pb-20">
+          <div
+            class="flex justify-center items-center w-20 h-20 pb-8 rounded-full mx-auto md:mx-0">
+            <img src="/images/icon-people-first.svg" alt="people first">
+          </div>
+          <div class="mt-3">
+            <h3 class="text-2xl font-semibold text-primary pb-4">People first</h3>
+            <p class="mt-1 text-gray">Our plans aren’t full of conditions and clauses to prevent payouts. We make
+            sure you’re covered when you need it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="container max-w-[1110px] px-4">
+    <div class="bg-primary flex flex-col md:flex-row justify-around text-center sm:text-left px-6 py-16 cta ">
+      <h1 class="text-6xl  max-w-xl pb-6 sm:pb-0 text-white">Find out more about how we work</h1>
+      <div class="flex button-wrapper justify-center items-center z-10">
+        <a href="#"
+          class=" py-2 px-4 border-2 border-white text-white uppercase hover:text-primary hover:bg-white hover:border-white focus:outline-none transition-all text-sm">
+          How we work
+        </a>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- footer -->
+  <section class="bg-white lines-footer">
+  <div class="container max-w-[1110px]">
+  <footer class=" relative w-full mx-auto pb-2 pt-32 ">
+    <div class="flex-row">
+      
+      <a class="block pb-8" href="#" aria-label="Brand">
+        <img class="w-22 h-auto mx-auto" src="../images/logo.svg" alt="Logo">
+      </a>
+      <div class="flex items-center justify-centers pb-8">
+        <!-- Social Brands -->
+        <div class="space-x-4 mx-auto">
+          <a class="inline-block" href="#">
+            <img src="/images/icon-facebook.svg" alt="Facebook">
+          </a>
+          <a class="inline-block" href="#">
+            <img src="/images/icon-twitter.svg" alt="Twitter">
+          </a>
+          <a class="inline-block" href="#">
+            <img src="/images/icon-pinterest.svg" alt="Pinterest">
+          </a>
+          <a class="inline-block" href="#">
+            <img src="/images/icon-instagram.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>      
+      <hr class="bg-gray w-4/5 h-0.5 mb-8 mx-auto">
+    </div>
+    <!-- footer grid -->
+    <div class="grid md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10 text-center">
+      <div>
+        <h4 class="text-xs font-bold text-gray uppercase pb-4 tracking-wide">Our company</h4>
+        <div class="mt-3 grid space-y-3 text-sm">
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">How we work</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">Why insure?</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">View plans</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">Reviews</a></p>
+        </div>
+      </div>
+      <!-- Col -->
+      <div>
+        <h4 class="text-xs font-bold text-gray uppercase pb-4 tracking-wide">Help me</h4>
+        <div class="mt-3 grid space-y-3 text-sm">
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">FAQ</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">Terms of use</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">Privacy policy</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">Cookies</a></p>
+        </div>
+      </div>
+      <!-- End Col -->
+      <!-- Col -->
+      <div>
+        <h4 class="text-xs font-bold text-gray uppercase pb-4 tracking-wide">Contact</h4>
+        <div class="mt-3 grid space-y-3 text-sm">
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase  tracking-wide hover:underline underline-offset-4"
+              href="#">Sales</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase  tracking-wide hover:underline underline-offset-4"
+              href="#">Support</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase  tracking-wide hover:underline underline-offset-4"
+              href="#">Live chat</a></p>
+        </div>
+      </div>
+      <!-- End Col -->
+      <!-- Col -->
+      <div>
+        <h4 class="text-xs font-bold text-gray uppercase pb-4 tracking-wide">Others</h4>
+
+        <div class="mt-3 grid space-y-3 text-sm">
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">Careers</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">Press</a></p>
+          <p><a class="inline-flex gap-x-2 text-primary font-bold hover:text-gray-800 uppercase tracking-wide hover:underline underline-offset-4"
+              href="#">Licences</a></p>
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </footer>
+  </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="/index.js"></script>
 </body>
 </html>
