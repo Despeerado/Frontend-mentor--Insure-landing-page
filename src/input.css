@@ -13,3 +13,14 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+.lines-intro:before {
+  src:url('../images/bg-pattern-intro-right-mobile.svg');
+}
+
+.lines-middle:before {
+  src:url('../images/bg-pattern-how-we-work-mobile.svg');
+}
+
+.lines-footer:before {
+  src:url('../images/bg-pattern-footer-mobile.svg');
+}
