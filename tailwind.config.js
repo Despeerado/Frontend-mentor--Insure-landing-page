@@ -22,6 +22,10 @@ module.exports = {
     container: {
       center: true,
     },
+    purge: {
+      enabled: true,
+      content: ['./src/**/*.html'],
+    }
   },
   plugins: [],
 };
