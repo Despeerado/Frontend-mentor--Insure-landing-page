@@ -1380,6 +1380,11 @@ h1, h2, h3 {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:text-gray {
+    --tw-text-opacity: 1;
+    color: hsl(273 4% 51% / var(--tw-text-opacity));
+  }
+
   .dark\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: hsl(0 0% 98% / var(--tw-text-opacity));
