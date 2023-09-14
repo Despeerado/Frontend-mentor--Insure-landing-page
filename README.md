@@ -1,6 +1,7 @@
 # Frontend Mentor - Insure landing page
 
 Live preview:
+(https://frontend-mentor-insure-landing-page-drab.vercel.app/)
 
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
 
